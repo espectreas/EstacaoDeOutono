@@ -1,0 +1,958 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#caligrafia {
+    font-family: "Explora", serif;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 100px;
+}
+
+#texto_transparente {
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    top: 0;
+
+    text-align: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 5vh;
+
+    z-index: 1;
+    gap: 75px;
+}
+
+#texto_transparente p {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+#texto_transparente_preto {
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    top: 0;
+
+    text-align: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 5vh;
+
+    z-index: 1;
+    gap: 75px;
+    background-color: black;
+}
+
+#texto_transparente_preto p {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.txt_h {
+    /*as outras opções*/
+    color: aliceblue;
+    font-weight: 500;
+
+    padding: 0;
+    margin: 0;
+
+    cursor: pointer;
+    isolation: isolate;
+    touch-action: none;
+
+    max-width: 75%;
+
+    transform: scale(1);
+    transition: transform 0.1s ease-in-out;
+    position-anchor: top center;
+    font-family: sansation, sans-serif !important;
+
+}
+
+.txt_h:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.txt_a
+
+/*o texto atual*/
+    {
+    color: rgb(194, 194, 194);
+    font-weight: 900;
+
+    padding: 0;
+    margin: 0;
+
+    font-weight: 900 !important;
+
+    font-family: sansation, sans-serif !important;
+
+    isolation: isolate;
+    touch-action: none;
+
+    max-width: 75%;
+
+    transform: scale(1);
+}
+
+u {
+    display: flex;
+    color: aliceblue;
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+}
+
+.banner {
+    display: flex;
+    position: relative;
+
+    top: 0;
+    left: 0;
+
+    text-align: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.banner .bg-video {
+    background-color: black;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.container-motivo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    align-items: center;
+
+    height: 60vh !important;
+    margin-top: 50px;
+}
+
+/* .container-motivo #imagem-motivo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+} */
+
+.cont {
+    width: 80vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 10fr 3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.divisoria {
+    width: 90%;
+    height: 80%;
+    border-radius: 35px;
+    border-color: #637371;
+    border-width: 1px;
+    overflow: clip;
+}
+
+.texto {
+    font-size: 25px;
+    line-height: 1.5;
+    color: #272727;
+    font-family: "sansation", sans-serif;
+}
+
+.caligrafia {
+    font-family: "Explora", serif;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 80px;
+}
+
+#texto-motivo {
+    /*div1*/
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.aside
+
+/*div2*/
+    {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.maisTexto
+
+/*div3*/
+    {
+    grid-area: 2 / 1 / 3 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.primeiro {
+    margin-bottom: 25px;
+}
+
+/*a partir daqui, maioria é dos outros sites que não o menu*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 30px);
+}
+
+.bodyForm {
+    height: 100vh !important;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.formulario > h1 {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-family: "sansation", sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+    letter-spacing: 2px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+form>div>label {
+    font-weight: bold;
+    font-family: "sansation", sans-serif;
+    margin-left: 10px;
+}
+
+form>div>input {
+    margin-top: 5px;
+    margin-right: 20px;
+    width: 95%;
+    border-radius: 20px;
+    height: 12px;
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(78, 78, 78);
+    border: transparent;
+    border: solid 2px rgb(0, 0, 0);
+}
+
+form>div>input:focus {
+    outline: none;
+    border: solid 2px rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(0, 0, 0);
+}
+
+form>div>button {
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.3s ease-in-out;
+    border: solid 2px rgb(0, 0, 0);
+    margin-top: 10px;
+}
+
+form>div>button:hover {
+    background-color: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+}
+
+.txt_h+.form {
+    color: rgb(0, 0, 0) !important;
+}
+
+/*EFEITO DE GLITCH*/
+
+.layers {
+    position: relative;
+}
+
+.layers::before,
+.layers::after {
+    content: "\"Túlio\"";
+    position: absolute;
+    width: 110%;
+    z-index: -1;
+}
+
+.layers::before {
+    top: 10px;
+    left: 15px;
+    color: #e0287d;
+}
+
+.layers::after {
+    top: 5px;
+    left: -10px;
+    color: #1bc7fb;
+}
+
+.single-path {
+    clip-path: polygon(0% 12%,
+            53% 12%,
+            53% 26%,
+            25% 26%,
+            25% 86%,
+            31% 86%,
+            31% 0%,
+            53% 0%,
+            53% 84%,
+            92% 84%,
+            92% 82%,
+            70% 82%,
+            70% 29%,
+            78% 29%,
+            78% 65%,
+            69% 65%,
+            69% 66%,
+            77% 66%,
+            77% 45%,
+            85% 45%,
+            85% 26%,
+            97% 26%,
+            97% 28%,
+            84% 28%,
+            84% 34%,
+            54% 34%,
+            54% 89%,
+            30% 89%,
+            30% 58%,
+            83% 58%,
+            83% 5%,
+            68% 5%,
+            68% 36%,
+            62% 36%,
+            62% 1%,
+            12% 1%,
+            12% 34%,
+            60% 34%,
+            60% 57%,
+            98% 57%,
+            98% 83%,
+            1% 83%,
+            1% 53%,
+            91% 53%,
+            91% 84%,
+            8% 84%,
+            8% 83%,
+            4% 83%);
+}
+
+.paths {
+    animation: paths 5s step-end infinite;
+}
+
+@keyframes paths {
+    0% {
+        clip-path: polygon(0% 43%,
+                83% 43%,
+                83% 22%,
+                23% 22%,
+                23% 24%,
+                91% 24%,
+                91% 26%,
+                18% 26%,
+                18% 83%,
+                29% 83%,
+                29% 17%,
+                41% 17%,
+                41% 39%,
+                18% 39%,
+                18% 82%,
+                54% 82%,
+                54% 88%,
+                19% 88%,
+                19% 4%,
+                39% 4%,
+                39% 14%,
+                76% 14%,
+                76% 52%,
+                23% 52%,
+                23% 35%,
+                19% 35%,
+                19% 8%,
+                36% 8%,
+                36% 31%,
+                73% 31%,
+                73% 16%,
+                1% 16%,
+                1% 56%,
+                50% 56%,
+                50% 8%);
+    }
+
+    5% {
+        clip-path: polygon(0% 29%,
+                44% 29%,
+                44% 83%,
+                94% 83%,
+                94% 56%,
+                11% 56%,
+                11% 64%,
+                94% 64%,
+                94% 70%,
+                88% 70%,
+                88% 32%,
+                18% 32%,
+                18% 96%,
+                10% 96%,
+                10% 62%,
+                9% 62%,
+                9% 84%,
+                68% 84%,
+                68% 50%,
+                52% 50%,
+                52% 55%,
+                35% 55%,
+                35% 87%,
+                25% 87%,
+                25% 39%,
+                15% 39%,
+                15% 88%,
+                52% 88%);
+    }
+
+    30% {
+        clip-path: polygon(0% 53%,
+                93% 53%,
+                93% 62%,
+                68% 62%,
+                68% 37%,
+                97% 37%,
+                97% 89%,
+                13% 89%,
+                13% 45%,
+                51% 45%,
+                51% 88%,
+                17% 88%,
+                17% 54%,
+                81% 54%,
+                81% 75%,
+                79% 75%,
+                79% 76%,
+                38% 76%,
+                38% 28%,
+                61% 28%,
+                61% 12%,
+                55% 12%,
+                55% 62%,
+                68% 62%,
+                68% 51%,
+                0% 51%,
+                0% 92%,
+                63% 92%,
+                63% 4%,
+                65% 4%);
+    }
+
+    45% {
+        clip-path: polygon(0% 33%,
+                2% 33%,
+                2% 69%,
+                58% 69%,
+                58% 94%,
+                55% 94%,
+                55% 25%,
+                33% 25%,
+                33% 85%,
+                16% 85%,
+                16% 19%,
+                5% 19%,
+                5% 20%,
+                79% 20%,
+                79% 96%,
+                93% 96%,
+                93% 50%,
+                5% 50%,
+                5% 74%,
+                55% 74%,
+                55% 57%,
+                96% 57%,
+                96% 59%,
+                87% 59%,
+                87% 65%,
+                82% 65%,
+                82% 39%,
+                63% 39%,
+                63% 92%,
+                4% 92%,
+                4% 36%,
+                24% 36%,
+                24% 70%,
+                1% 70%,
+                1% 43%,
+                15% 43%,
+                15% 28%,
+                23% 28%,
+                23% 71%,
+                90% 71%,
+                90% 86%,
+                97% 86%,
+                97% 1%,
+                60% 1%,
+                60% 67%,
+                71% 67%,
+                71% 91%,
+                17% 91%,
+                17% 14%,
+                39% 14%,
+                39% 30%,
+                58% 30%,
+                58% 11%,
+                52% 11%,
+                52% 83%,
+                68% 83%);
+    }
+
+    76% {
+        clip-path: polygon(0% 26%,
+                15% 26%,
+                15% 73%,
+                72% 73%,
+                72% 70%,
+                77% 70%,
+                77% 75%,
+                8% 75%,
+                8% 42%,
+                4% 42%,
+                4% 61%,
+                17% 61%,
+                17% 12%,
+                26% 12%,
+                26% 63%,
+                73% 63%,
+                73% 43%,
+                90% 43%,
+                90% 67%,
+                50% 67%,
+                50% 41%,
+                42% 41%,
+                42% 46%,
+                50% 46%,
+                50% 84%,
+                96% 84%,
+                96% 78%,
+                49% 78%,
+                49% 25%,
+                63% 25%,
+                63% 14%);
+    }
+
+    90% {
+        clip-path: polygon(0% 41%,
+                13% 41%,
+                13% 6%,
+                87% 6%,
+                87% 93%,
+                10% 93%,
+                10% 13%,
+                89% 13%,
+                89% 6%,
+                3% 6%,
+                3% 8%,
+                16% 8%,
+                16% 79%,
+                0% 79%,
+                0% 99%,
+                92% 99%,
+                92% 90%,
+                5% 90%,
+                5% 60%,
+                0% 60%,
+                0% 48%,
+                89% 48%,
+                89% 13%,
+                80% 13%,
+                80% 43%,
+                95% 43%,
+                95% 19%,
+                80% 19%,
+                80% 85%,
+                38% 85%,
+                38% 62%);
+    }
+
+    1%,
+    7%,
+    33%,
+    47%,
+    78%,
+    93% {
+        clip-path: none;
+    }
+}
+
+.movement {
+    position: relative;
+    animation: movement 18s step-end infinite;
+}
+
+@keyframes movement {
+    0% {
+        top: 0px;
+        left: -20px;
+    }
+
+    15% {
+        top: 10px;
+        left: 10px;
+    }
+
+    60% {
+        top: 5px;
+        left: -10px;
+    }
+
+    75% {
+        top: -5px;
+        left: 20px;
+    }
+
+    100% {
+        top: 10px;
+        left: 5px;
+    }
+}
+
+.opacity {
+    animation: opacity 15s step-end infinite;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0.1;
+    }
+
+    5% {
+        opacity: 0.7;
+    }
+
+    30% {
+        opacity: 0.4;
+    }
+
+    45% {
+        opacity: 0.6;
+    }
+
+    76% {
+        opacity: 0.4;
+    }
+
+    90% {
+        opacity: 0.8;
+    }
+
+    1%,
+    7%,
+    33%,
+    47%,
+    78%,
+    93% {
+        opacity: 0;
+    }
+}
+
+.font {
+    animation: font 17s step-end infinite;
+}
+
+@keyframes font {
+    0% {
+        font-weight: 100;
+        color: #e0287d;
+        filter: blur(3px);
+    }
+
+    20% {
+        font-weight: 500;
+        color: #911a1a;
+        filter: blur(0);
+    }
+
+    50% {
+        font-weight: 300;
+        color: #ff0000;
+        filter: blur(2px);
+    }
+
+    60% {
+        font-weight: 700;
+        color: #bd165c;
+        filter: blur(0);
+    }
+
+    90% {
+        font-weight: 500;
+        color: #e0287d;
+        filter: blur(6px);
+    }
+}
+
+.glitch span {
+    animation: paths 10s step-end infinite;
+}
+
+.glitch::before {
+    animation: paths 10s step-end infinite, opacity 5s step-end infinite,
+        font 8s step-end infinite, movement 10s step-end infinite;
+}
+
+.glitch::after {
+    animation: paths 5s step-end infinite, opacity 5s step-end infinite,
+        font 7s step-end infinite, movement 8s step-end infinite;
+}
+
+.glitch:hover
+{
+    color: #690000;
+}
+
+/*footer*/
+
+footer
+{
+    background-color: rgb(24, 24, 24);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    font-family: "sansation", sans-serif !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerAgenda
+{
+    background-color: black;
+    height: 95vh;
+}
+
+.vh
+{
+    height: 95vh !important;
+}
+
+/*capa dos albuns*/
+
+.containerAlbum
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100vw !important;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+.caixaAlbum
+{
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cardAlbum
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.cardAlbum > h1
+{
+    color: black;
+    font-family: "sansation", sans-serif !important;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.capaAlbum > img
+{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
+}
+
+.capaAlbum > img:hover
+{
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#discografia
+{
+    font-size: 90px;
+    font-family: "Explora", serif;
+    font-weight: 800;
+    transform: scale(1.15, 1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.br
+{
+    color: white !important;
+}
+
+.containerLetra
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    width: 100vw !important;
+}
+
+.tituloLetra
+{
+    width: 50vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    align-items: start;
+    justify-self: start;
+    align-self: start;
+}
+
+.tituloLetra > h1{
+    font-family: "Explora", serif;
+    font-weight: 800;
+    font-size: 80px;
+    text-align: center;
+    color: black;
+    margin-right: 20px;
+}
+
+.coisa
+{
+    width: 50vw;
+}
+
+.letraMusica
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100vw;
+}
+
+.letraEsquerda > h1
+{
+    font-family: "Explora", serif;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.letra
+{
+    font-family: "sansation", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: black;
+    text-align: justify;
+    max-width: 600px;
+}
+
+.vermelho
+{
+    background-color: rgb(32, 10, 10) !important;
+}
