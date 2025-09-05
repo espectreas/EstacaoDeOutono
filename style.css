@@ -838,13 +838,13 @@ footer
     align-items: center;
 }
 
-.cardAlbum
-{
+.cardAlbum {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    width: 100%;
 }
 
 .cardAlbum > h1
@@ -855,16 +855,26 @@ footer
     margin-bottom: 15px;
 }
 
-.capaAlbum > img
-{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(0.9);
-    transition: transform 0.3s ease-in-out;
+.capaAlbum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 24px;
+}
+
+.capaAlbum > img {
+    margin-bottom: 12px;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
 }
 
 .capaAlbum > img:hover
 {
-    transform: scale(1);
+    transform: scale(1.03);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -955,4 +965,163 @@ footer
 .vermelho
 {
     background-color: rgb(32, 10, 10) !important;
+}
+
+
+#nome
+{
+    color: white;
+    font-family: "Explora", serif;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 100px;
+    margin-bottom: 20px;
+    align-self: center;
+    margin-bottom: 70px;
+}
+
+.containerQuem
+{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    flex-direction: column;
+}
+
+.textoQuem
+{
+    font-size: 25px;
+    line-height: 1.5;
+    color: white;
+    font-family: "sansation", sans-serif;
+    margin-bottom: 30px;
+}
+
+.importante
+{
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.altura
+{
+    height: auto !important;
+}
+
+#nextBtn {
+    display: block;
+    margin: 20px auto 0 auto;
+    background: linear-gradient(90deg, #ffb347 0%, #ffcc33 100%);
+    color: #222;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    font-family: 'Cal Sans', 'League Spartan', Arial, sans-serif;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 10px;
+    outline: none;
+}
+
+#nextBtn:hover {
+    background: linear-gradient(90deg, #ffcc33 0%, #ffb347 100%);
+    transform: scale(1.07);
+    color: #111;
+}
+
+#prevBtn {
+    background: linear-gradient(90deg, #ffd6d6 0%, #ffb347 100%);
+    color: #222;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    font-family: 'Cal Sans', 'League Spartan', Arial, sans-serif;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    outline: none;
+}
+
+#prevBtn:hover {
+    background: linear-gradient(90deg, #ffb347 0%, #ffd6d6 100%);
+    transform: scale(1.07);
+    color: #111;
+}
+
+#prevBtn, #nextBtn {
+    min-width: 60px;
+    padding: 12px 0;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 0;
+    display: inline-block;
+}
+
+/* 2 */
+
+#nextBtn2 {
+    display: block;
+    margin: 20px auto 0 auto;
+    background: linear-gradient(90deg, #fff2f2 0%, #ffffff 100%);
+    color: #222;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    font-family: 'Cal Sans', 'League Spartan', Arial, sans-serif;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 10px;
+    outline: none;
+}
+
+#nextBtn2:hover {
+    background: linear-gradient(90deg,#ffffff 0%, #fff2f2 100%);
+    transform: scale(1.07);
+    color: #111;
+}
+
+#prevBtn2 {
+    background: linear-gradient(90deg, #fff2f2 0%, #ffffff 100%);
+    color: #222;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    font-family: 'Cal Sans', 'League Spartan', Arial, sans-serif;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    outline: none;
+}
+
+#prevBtn2:hover {
+    background: linear-gradient(90deg, #ffffff 0%, #fff2f2 100%);
+    transform: scale(1.07);
+    color: #111;
+}
+
+#prevBtn2, #nextBtn2 {
+    min-width: 60px;
+    padding: 12px 0;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 0;
+    display: inline-block;
+}
+
+.media-player {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
 }
